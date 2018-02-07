@@ -1,0 +1,315 @@
+
+<html>
+<head>
+<title> Operator Performance Indicator </title>
+<link rel="stylesheet" type="text/css" href="Global.css" />
+<meta name="viewport" content="width=device-width, intitial-scale: 1.0, user-scalable=0" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<style type="text/css"></style>
+<style>
+	
+body, html {
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato", d]=sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+.truck1, .truck2, .truck3{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.truck1{
+	background-image:url('redTruck.jpg');
+	min-height: 100%;
+}
+
+.truck2{
+	background-image:url('truck2.jpg');
+	min-height: 100%;
+}
+
+.truck3{
+	background-image:url('truck5.jpg');
+	min-height: 100%;
+}
+
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section-light{
+	background-color:#f4f4f4 ;
+	color: #666;
+}
+
+.section-dark{
+	background-color:282e34 ;
+	color: #ddd;
+}
+
+.ptext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.ptext .border{
+	background-color: #111;
+	color: #fff;
+	padding: 28px;
+}
+
+.ptext .border .trans{
+	background-color: transparent;
+}
+
+.img2{
+	bottom: -185%;
+	left: 14.25%;
+	border-radius: 60%;
+	color: red;
+	background-size: cover;
+	position: absolute;
+	align-content: center;
+	//padding-top: 18px;
+	//padding-left: 18px;
+	//width: 100%;
+	//height: 100%;
+}
+
+.creativenav_3D ul li{
+			display: inline-block;
+			list-style: outside none none;
+			margin-left: -3%;
+}
+
+.creativenav_3D ul{    
+			margin: 0px;
+			padding: 0;
+			text-align: right;
+			font-size: 15px;
+			position: fixed;
+			z-index: 1;
+			width: 100%;
+			border: 2px solid black;
+			background-color: black;
+}
+
+.creativenav_3D a{
+			padding: 7px 60px;	
+			position: relative;
+			display: inline-block;
+			outline: none;
+			color: #435a6b;
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 200;
+			text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+
+.creativenav_3D a{
+			color: #E11C1C;
+			display: inline-block;
+			text-decoration: none;
+			overflow: hidden;
+			vertical-align: top;
+			-webkit-perspective: 600px;
+			-moz-perspective: 600px;
+			-ms-perspective: 600px;
+			perspective: 600px;
+			-webkit-perspective-origin: 50% 70%;
+			-moz-perspective-origin: 50% 70%;
+			-ms-perspective-origin: 50% 70%;
+			perspective-origin: 50% 70%;
+}
+
+
+.creativenav_3D a:hover span{
+			background: YELLOW;
+			-webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+			-moz-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+			-ms-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+			transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+}	
+
+.creativenav_3D a span{  
+			display: block;
+			position: relative;
+			padding: 12px;
+			-webkit-transition: all 0.6s ease;
+			-moz-transition: all 0.6s ease;
+			-ms-transition: all 0.6s ease;
+			transition: all 0.7s ease;
+			-webkit-transform-origin: 50% 0%;
+			-moz-transform-origin: 50% 0%;
+			-ms-transform-origin: 50% 0%;
+			transform-origin: 50% 0%;
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;  
+			transform-style: preserve-3d;
+}	
+
+.creativenav_3D a span:after {  
+			content: attr(data-title);
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			padding: 12px;
+			color: #fff;
+			background: ;  
+			-webkit-transform-origin: 50% 0%;
+			-moz-transform-origin: 50% 0%;
+			-ms-transform-origin: 50% 0%;
+			transform-origin: 50% 0%;
+			-webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+			-moz-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+			-ms-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+			transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+}
+
+.split{
+			column-count: 2;
+}
+
+.footer {
+   			position: fixed;
+   			left: 0;
+   			padding: 5px;
+   			bottom: 0;
+   			width: 100%;
+   			background-color: black;
+   			color: white;
+   			text-align: center;
+   			min-height: 50px;
+}
+
+.loginBox{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 30%;
+			padding: 40px;
+			background: rgba(0,0,0,.8);
+			box-sizing: border-box;
+			box-shadow: 0 15px 25px rgba(0,0,0,.5);
+			border-radius: 10px;
+}
+
+.loginBox h2{
+			margin: 0 0 30px;
+			padding: 0;
+			color: #fff;
+			text-align: center;
+}
+
+.loginBox .inputBox{
+			position: relative;
+			
+}
+
+.loginBox .inputBox input{
+			width: 100%;
+			padding: 10px 0;
+			font-size: 16px;
+			color: #fff;
+			letter-spacing: 1px;
+			margin-bottom: 30px;
+			border: none;
+			border-bottom: 1px solid #fff;
+			outline: none;
+			background: transparent;
+}
+
+.loginBox .inputBox label{
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 10px 0;
+			font-size: 16px;
+			color: #fff;
+			pointer-events: none;
+			transition: .5s;
+}
+
+.loginBox .inputBox input:focus ~ label,
+.loginBox .inputBox input:valid ~ label{
+			position: absolute;
+			top: -18px;
+			left: 0;
+			padding: 5px 0px;
+			font-size: 12px;
+			color: #03a9f4;
+			pointer-events: none;
+			transition: .5s;
+}
+
+.inputBox input[type="submit"]{
+			background: transparent;
+			border: none;
+			outline: none;
+			color: #fff;
+			background: #03a9f4;
+			padding: 10px 20px;
+			cursor: pointer;
+			border-radius: 5px;
+}
+
+</style>
+</head>
+
+<body>
+	<img src="logo.jpg" class="img2" style="left: 10px; top: 4px; position: fixed; z-index: 4; width: 70px; height: 70px;">
+
+	<div class="creativenav_3D">
+	<ul>
+        
+        <li><a href="Myl-Way-Home.htm"><span data-title="Home"><i class="fa fa-home"></i></span></a></li>                          
+		<li><a href="Myl-Way-Home.htm#AboutUs"><span data-title="About Us"><i class="fa fa-info"></i></span></a></li>
+		<li><a href="Myl-Way-Home.htm#Services"><span data-title="Services"><i class="fa fa-truck"></i></span></a></li>
+		<li><a href="Myl-Way-Login.htm"><span data-title="Login"><i class="fa fa-sign-in"></i></span></a></li>
+        
+	</ul>
+   </div>
+
+	<div class="truck1">
+		<div class="loginBox">
+			<h2>Login</h2>
+			<form>
+				<div class="inputBox">
+				<input type="username" name="" required="">
+				<label>Username</label>
+				</div>
+				<div class="inputBox">
+				<input type="password" name="" required="">
+				<label>Password</label>
+				</div>
+				<input type="submit" name="" value="Login" />
+			</form>
+		</div>
+	</div>
+	
+ <div class="footer">
+	<center>Copyright &copy 2018 Myl-Way Transportations LLC</center>
+   </div>
+</body>
+</html>

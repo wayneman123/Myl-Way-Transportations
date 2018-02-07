@@ -1,0 +1,289 @@
+﻿
+<html>
+<head>
+<title> Myl-Way Transportations LLC. </title>
+<link rel="stylesheet" type="text/css" href="Global.css" />
+<meta name="viewport" content="width=device-width, intitial-scale: 1.0, user-scalable=0" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<style type="text/css"></style>
+<style>
+	
+body, html {
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato", d]=sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+.truck1, .truck2, .truck3{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.truck1{
+	background-image:url('redTruck.jpg');
+	min-height: 100%;
+}
+
+.truck2{
+	background-image:url('truck2.jpg');
+	min-height: 400px;
+}
+
+.truck3{
+	background-image:url('truck5.jpg');
+	min-height: 400px;
+}
+
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section-light{
+	background-color:#f4f4f4 ;
+	color: #666;
+}
+
+.section-dark{
+	background-color:282e34 ;
+	color: #ddd;
+}
+
+.ptext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.ptext .border{
+	background-color: #111;
+	color: #fff;
+	padding: 28px;
+}
+
+.ptext .border .trans{
+	background-color: transparent;
+}
+
+.img2{
+	bottom: -185%;
+	left: 14.25%;
+	border-radius: 60%;
+	color: red;
+	background-size: cover;
+	position: absolute;
+	align-content: center;
+	//padding-top: 18px;
+	//padding-left: 18px;
+	//width: 100%;
+	//height: 100%;
+}
+
+.creativenav_3D ul li{
+			display: inline-block;
+			list-style: outside none none;
+			margin-left: -3%;
+}
+
+.creativenav_3D ul{    
+			margin: 0px;
+			padding: 0;
+			text-align: right;
+			font-size: 15px;
+			position: fixed;
+			z-index: 1;
+			width: 100%;
+			border: 5px solid black;
+			background-color: black;
+}
+
+.creativenav_3D a{
+			padding: 7px 60px;	
+			position: relative;
+			display: inline-block;
+			outline: none;
+			color: #435a6b;
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 200;
+			text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+
+.creativenav_3D a{
+			color: #E11C1C;
+			display: inline-block;
+			text-decoration: none;
+			overflow: hidden;
+			vertical-align: top;
+			-webkit-perspective: 600px;
+			-moz-perspective: 600px;
+			-ms-perspective: 600px;
+			perspective: 600px;
+			-webkit-perspective-origin: 50% 70%;
+			-moz-perspective-origin: 50% 70%;
+			-ms-perspective-origin: 50% 70%;
+			perspective-origin: 50% 70%;
+}
+
+
+.creativenav_3D a:hover span{
+			background: YELLOW;
+			-webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+			-moz-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+			-ms-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+			transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+}	
+
+.creativenav_3D a span{  
+			display: block;
+			position: relative;
+			padding: 12px;
+			-webkit-transition: all 0.6s ease;
+			-moz-transition: all 0.6s ease;
+			-ms-transition: all 0.6s ease;
+			transition: all 0.7s ease;
+			-webkit-transform-origin: 50% 0%;
+			-moz-transform-origin: 50% 0%;
+			-ms-transform-origin: 50% 0%;
+			transform-origin: 50% 0%;
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;  
+			transform-style: preserve-3d;
+}	
+
+.creativenav_3D a span:after {  
+			content: attr(data-title);
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			padding: 12px;
+			color: #fff;
+			background: ;  
+			-webkit-transform-origin: 50% 0%;
+			-moz-transform-origin: 50% 0%;
+			-ms-transform-origin: 50% 0%;
+			transform-origin: 50% 0%;
+			-webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+			-moz-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+			-ms-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+			transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+}
+
+.split{
+			column-count: 2;
+}
+
+.footer {
+   			position: relative;
+   			left: 0;
+   			bottom: 0;
+   			width: 100%;
+   			background-color: black;
+   			color: white;
+   			text-align: center;
+   			min-height: 60px;
+}
+
+</style>
+</head>
+
+<body>
+
+	<img src="logo.jpg" class="img2" style="left: 10px; top: 5px; position: fixed; z-index: 4; width: 70px; height: 70px;">
+	<p style="left: 90px; top: 0px; position: fixed; z-index: 4; width: 100px; height: 30px; color: white;"><i><b>Myl-Way Transportations</b></i></p>
+
+	<div class="creativenav_3D">
+	<ul>
+        
+        <li><a href="Myl-Way-Home.htm"><span data-title="Home"><i class="fa fa-home"></i></span></a></li>             
+		<li><a href="#AboutUs"><span data-title="About Us"><i class="fa fa-info"></i></span></a></li>
+		<li><a href="#Services"><span data-title="Services"><i class="fa fa-truck"></i></span></a></li>
+		<li><a href="Myl-Way-Login.htm"><span data-title="Login"><i class="fa fa-sign-in"></i></span></a></li>
+        
+	</ul>
+   </div>
+
+	<div class="truck1">
+		<div class= "ptext">
+			<span class="border trans">
+				 <i><b>Myl-Way Transportations LLC</b></i>
+				<br><img src="logo.jpg" class="img2" style="bottom: -180px; left: 730px;">
+				 
+			</span>
+		</div>
+	</div>
+
+	<div id="AboutUs">
+	<section class="section section-light">
+		<h2><br>WHO WE ARE</h2>
+		<p><center><i><b>
+		We pride ourselves on consistently providing on-time, complete and safe delivery of goods. In this, our track record speaks for itself. The longstanding relationships we have with many of our clients have been built out of out ability to provide the best value freight services. We achieve this without taking shortcuts; testimony to this are our excellent safety record and an insurance record rated by our insurers as "an A – an excellent claims history over the last 10 years".
+		<br><br>
+		<div class="split">
+		</i><h2>QUALITY PEOPLE</h2><i>
+		We take a very hands on approach with our service and are passionate about our industry. Likewise, we have a team of professionals who share our philosophy of "going that extra mile". As we are a mid-size company, you still deal direct with the people who are accountable. Our team shares a wealth of experience which enables us to develop innovative freight solutions and react quickly to changing requirements.
+		<br>
+		</i><h2><br>QUALITY EQUIPMENT</h2><i>
+		We work hard to keep our wheels constantly moving in order to provide a top-class service. This starts with our ongoing investment in the latest technology and best equipment for the job. We run a fleet of top-of-the-line flatbed truck units that set us apart from the competition.
+		</b></i></center></p>
+		</div>
+	</section>
+	</div>
+
+	<div class="truck2">
+		<div class= "ptext" style="top: 25%;">
+			<img src="logo.jpg" class="img2" style="left: 715px; bottom: -180px;">
+			<span class="border trans">
+				<i><b> Driving Excellence...</b></i>
+			</span>
+		</div>
+	</div>
+
+<section class="section section-light">
+		<h2>MISSION STATEMENT</h2>
+		<p><center><i><b>
+		DELIVERING YOUR BRAND…
+		When we are handling your goods, we are representing your business. We recognise that image and professionalism are very important. 
+		We are always accountable for our service, and will go that extra mile to ensure that you are satisfied. Contact us to discuss your requirements.
+		</b></i></center></p>
+	</section>
+
+	<div id="Services">
+	<div class="truck3">
+		<div class= "ptext" style="top: 25%;">
+			<img src="logo.jpg" class="img2" style="left: 715px; bottom: -180px;">
+			<span class="border trans">
+				 <i><b> Our Services...</b></i>
+			</span>
+		</div>
+	</div>
+	<section class="section section-light">
+		<h2>DELIVERING COMPLETE SERVICE</h2>
+		<p><center><i><b>
+		From the outset, we are happy to work with you to develop transportation solutions to meet your requirements. We aim to make our services as hassle free as possible.
+		We are always accountable for our service, and will go that extra mile to ensure that you are satisfied. Contact us to discuss your requirements.
+		</b></i></center></p>
+	</section>
+	</div>
+ <div class="footer">
+	<center>Copyright &copy 2018 Myl-Way Transportations LLC</center>
+   </div>
+</body>
+</html>
