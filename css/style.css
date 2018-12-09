@@ -12,11 +12,15 @@ body
 	padding: 0;
 }
 
-.column1 {
-    float: left;
-    width: 33.33%;
-    /*padding: 10px;
-    /*height: 300px; Should be removed. Only for demonstration */
+.column1 
+{
+    	float: left;
+    	width: 33.33%;
+	position: absolute;
+  	top: 0px;
+  	left: 0px;
+    	/*padding: 10px;
+    	/*height: 300px; Should be removed. Only for demonstration */
 }
 
 
