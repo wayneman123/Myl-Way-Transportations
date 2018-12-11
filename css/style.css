@@ -16,7 +16,7 @@ body
 {
     	float: left;
     	width: 33.33%;
-	position: absolute;
+	position: relative;
   	top: 0px;
   	left: 0px;
     	/*padding: 10px;
