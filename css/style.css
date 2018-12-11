@@ -15,9 +15,9 @@ body
 .column1 
 {
     	float: left;
-    	width: 33.33%;
-	position: relative;
-  	top: 0px;
+	position: absolute;
+  	margin: 0px;
+	top: 0px;
   	left: 0px;
     	/*padding: 10px;
     	/*height: 300px; Should be removed. Only for demonstration */
