@@ -534,7 +534,7 @@ h4 .team-member-designation
       rgba(255, 0, 0, 0.35), 
       rgba(255, 0, 0, 0.35)
     ),*/ url(..//redTruck.jpg);
-	background-size: full;
+	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	color: white;
@@ -869,11 +869,11 @@ h4 .team-member-designation
 .stat
 {
 	/*background-image: url(..//img/lolipop.jpg);*/
-	background:  linear-gradient(
+	background: /* linear-gradient(
       rgba(0, 0, 0, .85), 
       rgba(0, 0, 0, .85)
-    ), url(..//truck2.jpg);
-	background-size: 150%;
+    ), */url(..//truck2.jpg);
+	background-size: cover;
 	background-position: center;
 	padding-top: 180px;
 	padding-bottom: 200px;
