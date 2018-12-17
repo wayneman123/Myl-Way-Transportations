@@ -534,7 +534,7 @@ h4 .team-member-designation
       rgba(255, 0, 0, 0.35), 
       rgba(255, 0, 0, 0.35)
     ),*/ url(..//redTruck.jpg);
-	background-size: cover;
+	background-size: full;
 	background-position: center;
 	background-attachment: fixed;
 	color: white;
