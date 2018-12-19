@@ -19,6 +19,9 @@ body
   	margin: 10px;
 	top: 10px;
   	left: 10px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 13px;
     	/*padding: 10px;
     	/*height: 300px; Should be removed. Only for demonstration */
 }
