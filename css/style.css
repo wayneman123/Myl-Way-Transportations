@@ -12,13 +12,10 @@ body
 	padding: 0;
 }
 
-.column1 
+.logo 
 {
     	float: left;
-	position: left top;
-  	margin: -10px;
-	top: -50px;
-  	left: -180px;
+	display: inline-block;
 	font-weight: 600;
 	letter-spacing: 1px;
 	font-size: 13px;
