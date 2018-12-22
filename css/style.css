@@ -15,8 +15,8 @@ body
 .logo 
 {
     	position: left top;
-	margin: 0; 
 	display: inline-block;
+	left: 0;
 	font-weight: 600;
 	letter-spacing: 1px;
 	font-size: 13px;
